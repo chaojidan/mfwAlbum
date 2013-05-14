@@ -226,9 +226,6 @@
                                 new_cur_num = key_map[cur_id] - 1;
                             if ( new_cur_num >= 0 ) {
                                 _change($this, new_cur_num);
-                                //render($this, new_cur_num);
-                                //thumb_position($this, new_cur_num);
-                                //$this.data('cur_id', arr_data[new_cur_num].id);
                             }
                         })
                         .delegate('.' + arrow_next, 'click', function() {
@@ -238,9 +235,6 @@
                                 new_cur_num = key_map[cur_id] + 1;
                             if ( new_cur_num < arr_data.length ) {
                                 _change($this, new_cur_num);
-                                //render($this, new_cur_num);
-                                //thumb_position($this, new_cur_num);
-                                //$this.data('cur_id', arr_data[new_cur_num].id);
                             }
                         });
                 } else {
@@ -252,9 +246,6 @@
                                 new_cur_num = key_map[cur_id] - 1;
                             if ( new_cur_num >= 0 ) {
                                 _change($this, new_cur_num);
-                                //render($this, new_cur_num);
-                                //thumb_position($this, new_cur_num);
-                                //$this.data('cur_id', arr_data[new_cur_num].id);
                             }
                         })
                         .delegate(settings.next_btn, 'click', function() {
@@ -264,9 +255,6 @@
                                 new_cur_num = key_map[cur_id] + 1;
                             if ( new_cur_num < arr_data.length ) {
                                 _change($this, new_cur_num);
-                                //render($this, new_cur_num);
-                                //thumb_position($this, new_cur_num);
-                                //$this.data('cur_id', arr_data[new_cur_num].id);
                             }
                         });
                 }
@@ -409,9 +397,6 @@
                     new_cur_num = key_map[new_cur_id];
                 if ( new_cur_num != undefined ) {
                     _change($this, new_cur_num);
-                    //render($this, new_cur_num);
-                    //$this.data('cur_id', new_cur_id);
-                    //thumb_position($this, new_cur_num);
                 }
 
             });
@@ -445,18 +430,12 @@
                 new_cur_num = key_map[cur_id] - 1;
                 if ( new_cur_num >= 0 ) {
                     _change($this, new_cur_num);
-/*                    render($this, new_cur_num);
-                    thumb_position($this, new_cur_num);
-                    $this.data('cur_id', arr_data[new_cur_num].id);*/
                 }
                 break;
             case 39:
                 new_cur_num = key_map[cur_id] + 1;
                 if ( new_cur_num < arr_data.length ) {
                     _change($this, new_cur_num);
-/*                    render($this, new_cur_num);
-                    thumb_position($this, new_cur_num);
-                    $this.data('cur_id', arr_data[new_cur_num].id);*/
                 }
                 break;
         }
