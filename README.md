@@ -4,38 +4,38 @@ mfwAlbum
 jQuery相册弹出层插件
 
 
-  特点：
-       1.所有图片（包括缩略图）实现按需加载，不浪费带宽
-       2.显示样式可自由定制
-       3.支持键盘左右箭头翻页
-       4.缩略图切换效果可定制
+- 特点：
+  1. 所有图片（包括缩略图）实现按需加载，不浪费带宽
+  2. 显示样式可自由定制
+  3. 支持键盘左右箭头翻页
+  4. 缩略图切换效果可定制
  
-  兼容性：
+- 兼容性：
        兼容Firefox，360，chrome，Safari、搜狗、IE7及以上浏览器
        IE6 下基本可用，但不能设置 mouse_arrow=true 和 mask=true
  
-  包依赖：
-       jQuery 类库
-       jquery.tmpl.js 插件
-       jquery.easing.1.3.js （可选，如果要定制缩略图切换效果需加载）
-       强烈建议jQuery版本大于1.4，否则当图片过多时（缩略图容器宽度超过10000像素）缩略图滚动效果可能不正确（jQuery自身bug导致）
+- 包依赖：
+  1. jQuery 类库
+  2. jquery.tmpl.js 插件
+  3. jquery.easing.1.3.js （可选，如果要定制缩略图切换效果需加载）
+  4. 强烈建议jQuery版本大于1.4，否则当图片过多时（缩略图容器宽度超过10000像素）缩略图滚动效果可能不正确（jQuery自身bug导致）
  
-  配置方法：
+- 配置方法：
  
        配置相册主要分四部分：1.CSS样式；2.HTML代码及模板； 3.数据； 4.JS代码。
        下面分别介绍：
  
-  1.CSS样式：
+  1. CSS样式：
        可根据需要定制样式，这部分工作主要由Builder完成，这里省略。
  
-  2.HTML代码及模板：
+  2. HTML代码及模板：
        (1).首先需要一个空的div作为相册容器：
            <div class="popup hide" id="album_box"></div>
  
        (2).模板分两部分，相册主模板和缩略图列表模板，模板使用jQuery.tmpl 插件的语法：
  
        A.相册主模板类似下面：
-···html
+
         <script id="album_tmpl" type="text/x-jquery-tmpl">
             <!-- 关闭按钮 -->
             <span class="close"></span>
@@ -81,7 +81,7 @@ jQuery相册弹出层插件
                 </div>
             </div>
         </script>
-```
+
        其中 title，desc，user_link，username，lv，ctime 这几个class是预先定义好的，和数据中的字段相对应，这些class可省略，
        如果省略，则程序不会在数据中查找对应的值，如果不省略，则数据中必须提供相应的值。
  
